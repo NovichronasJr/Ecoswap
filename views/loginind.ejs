@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css"> <!-- Link to an external CSS file -->
+    <title>login</title>
+    <style>
+        /* Basic styling for the form */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-form {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
+        .form-group .checkbox-label {
+            font-weight: normal;
+            color: #555;
+        }
+
+        .form-group .submit-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .form-group .submit-btn:hover {
+            background-color: #218838;
+        }
+
+        .login-form p {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .login-form p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login-form p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="login-form">
+        <h2>Login</h2>
+        <form action="/login/indv" method="POST">
+            <div class="form-group">
+                <label for="email">Email/ID:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="isIndividual" id="isIndividual" value="true">
+                    <span class="checkbox-label">I am an individual</span>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Login</button>
+            </div>
+        </form>
+        <p>Don't have an account? <a href="/register">Register here</a></p>
+    </section>
+
+</body>
+</html>
+

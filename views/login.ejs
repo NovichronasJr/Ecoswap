@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login as</title>
+    <style>
+        /* Style for the container */
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px; /* Add some margin */
+        }
+
+        /* Style for images */
+        img {
+            width: 200px; /* Set a fixed width for the images */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 100%; /* Ensure responsiveness */
+            object-fit: cover; /* Ensure the image covers the area */
+        }
+
+        /* Style for buttons */
+        button {
+            margin-top: 10px; /* Add space between the image and the button */
+            padding: 10px 20px; /* Add some padding to buttons */
+            font-size: 16px; /* Increase button font size */
+            cursor: pointer; /* Change cursor on hover */
+            border: none; /* Remove border */
+            color: white; /* Text color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Login as :- </h1>
+    <div style="display: flex;flex-direction: row; justify-content: space-evenly; align-items: center;">
+        <form action="/login/indv" method="GET" class="image-container">
+            <img src="/Assets/3273526eafb749b98268e7ecef52a432-removebg-preview.png" alt="Individual"/>
+            <button type="submit" style="background-color: #84cc16;">Individual</button>
+        </form>
+        <form action="/login/org" method="GET" class="image-container">
+            <img src="/Assets/a0c4ee77b193a26a994f7bec5f8fcdb0-removebg-preview.png" alt="Organization"/>
+            <button type="submit" style="background-color: #f97316;">Organization</button>
+        </form>
+    </div>
+</body>
+</html>

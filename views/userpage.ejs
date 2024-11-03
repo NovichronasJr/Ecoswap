@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Actions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            margin: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>What would you like to do?</h1>
+    <p>Logged in as: <strong><%= email %></strong></p> <!-- Display user's email -->
+
+    <!-- Button to Buy a Product -->
+    <form action="/buy" method="GET">
+        <button type="submit">Buy Product</button>
+    </form>
+
+    <!-- Button to Sell a Product -->
+    <form action="/sell" method="GET">
+        <button type="submit">Sell Product</button>
+    </form>
+
+</body>
+</html>
