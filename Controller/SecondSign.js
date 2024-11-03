@@ -4,6 +4,19 @@ const User = require('../models/user'); // Ensure the path is correct
 const Organization = require('../models/org'); // Ensure the path is correct
 
 // POST request to add an individual user
+
+router.get('/',(req,res)=>{
+    res.render('signup');
+})
+
+router.get('/indiv',(req,res)=>{
+    res.render('signupind');
+})
+
+router.get('/org',(req,res)=>{
+    res.render('signuporg')
+})
+
 router.post('/indiv', async (req, res) => {
     const { email, password, isIndividual = true } = req.body;
 

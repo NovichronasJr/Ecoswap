@@ -5,211 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/img/images.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>homepage</title>
-</head>
-<body>
+    <title>Homepage</title>
     <style>
         body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: papayawhip;
-       
-    }
-    
-    header {
-        background-color: #f8f8f8;
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .logo {
-        font-size: 32px;
-        font-weight: bolder;
-     
-            background-image: linear-gradient(to right, green 20%, blue 40% );
-            -webkit-background-clip : text;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: papayawhip;
+        }
+        
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bolder;
+            background-image: linear-gradient(to right, green 20%, blue 40%);
+            -webkit-background-clip: text;
             color: transparent;
-        
-        
-    }
-    .logo p{
-        font-size: 20px;
-        font-weight: lighter;
-        color:black;
-       justify-content: center;
-    }
-    
-    nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-    }
-    
-    nav ul li {
-        margin-left: 20px;
-    }
-    
-    
-    nav ul li a {
-        text-decoration: none;
-        color: #333;
-        transition: color 0.3s, text-decoration 0.3s;
-    }
-    
-    nav ul li a:hover {
-        text-decoration: underline;
-        color: #000; 
-        scale: 1.2;
-        font-weight: bolder;
-    }
-    
-    
-    footer {
-        background-color: #f1f1f1;
-        text-align: center;
-        padding: 10px 0;
-        position: relative;
-        margin-bottom: 0;
-        width: 100%;
-    }
-    
-    .banner {
-        background-color: #e8e8e8;
-        padding: 50px;
-        text-align:right;
-        
-    }
-    
-    .banner input {
-        padding: 10px;
-        width: 40%;
-    }
-    .but button {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .products, .login-form, .categories, .account {
-        max-width: 600px;
-        margin: 50px auto;
-        padding: 20px ;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f8f8f8;
-    }
-    
-    .products h2, .login-form h2, .categories h2, .account h2 {
-        text-align: center;
-    }
-    .products h2{
-        padding: 50px;
-    }
-    
-    .product {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        margin: 20px;
-        text-align: center;
-        display: inline-block;
-        width: 200px;
-    }
-    .product-slider {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-    }
-    
-    .product img {
-        max-width: 100%;
-        height: 150px;
-    }
-    
-    .form-group {
-        margin-bottom: 15px;
-    }
-    
-    .form-group label {
-        display: block;
-        margin-bottom: 5px;
-    }
-    
-    .form-group input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-    
-    button {
-        width: 100%;
-        padding: 10px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    button:hover {
-        background-color: #0056b3;
-    }
-    
-    
-    .product {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        margin: 10px;
-        text-align: center;
-        display: inline-block;
-        width: 200px;
-        background-color: white;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        scroll-snap-align: start;
-    }
-    
-    .product img {
-        max-width: 100%;
-        min-height:150px ;
-        border-radius: 5px;
-    }
-    
-    button:hover {
-        background-color: #45a049;
-    }
-    .product:hover {
-        transform: scale(1.1);
-        transition:0.2s;
-        width: 80%;
-        height:auto;
-        padding:20px;
-        border-radius:20px;
-    }
-    .products{
-        background-color:skyblue;
-      
-    }
-    .products{
-        padding-top: 0;
-        
-        ::-webkit-scrollbar { display: none; }
-        -ms-overflow-style: none;
-        
-    }
-    .products h2{
-        padding-top: 0;
-        text-align: left;
-        padding-bottom: 0;
-        padding-left: 10px;
-        
-    }
+        }
+        .logo p {
+            font-size: 20px;
+            font-weight: lighter;
+            color: black;
+            justify-content: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #000;
+            scale: 1.2;
+            font-weight: bolder;
+        }
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .banner {
+            background-color: #e8e8e8;
+            padding: 50px;
+            text-align: right;
+        }
+        .banner input {
+            padding: 10px;
+            width: 40%;
+        }
+        .but button {
+            width: 40px;
+            height: 40px;
+        }
+        .products {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+        }
+        .products h2 {
+            text-align: center;
+        }
+        .product-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            display: inline-block;
+            width: 200px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            scroll-snap-align: start;
+        }
+        .product img {
+            max-width: 100%;
+            min-height: 150px;
+            border-radius: 5px;
+        }
+        #anchor {
+            text-decoration: none;
+            color: white;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .product:hover {
+            transform: scale(1.1);
+            transition: 0.2s;
+            width: 80%;
+            height: auto;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .products {
+            background-color: skyblue;
+            padding-top: 0;
+        }
+        .products::-webkit-scrollbar { display: none; }
+        .products {
+            -ms-overflow-style: none;
+        }
     </style>
-    
+</head>
+<body>
     <header>
         <div class="logo">
             EcoSwap
@@ -219,10 +151,12 @@
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/categories">Categories</a></li>
-                <li><a href="/account">My Account</a></li>
-                <li><a href="/login">Login</a></li>
+                <li><a href="/categories">categories</a></li>
+                <li><a href="/about">About</a></li>
             </ul>
+            <form action="/login" method="GET">
+                <button id="button">Login</button>
+            </form>
         </nav>
     </header>
 
@@ -239,14 +173,24 @@
         <section class="products">
             <h2>Featured Products</h2>
             <div class="product-slider">
-                <% products.forEach(product => { %>
-                    <div class="product">
-                        <img src="<%= product.image %>" alt="<%= product.name %>" width="150" height="150">
-                        <h3><%= product.name %></h3>
-                        <p>Price: ₹<%= product.price %></p>
-                        <button>Contact Seller</button>
-                    </div>
-                <% }) %>
+                <div class="product">
+                    <img src="/img/bananaleaf.jpeg" alt="Banana Leaf" width="150" height="150">
+                    <h3>Banana Leaf</h3>
+                    <p>Price: ₹100</p>
+                    <a id="anchor" href="/Login"><button>Contact Seller</button></a>
+                </div>
+                <div class="product">
+                    <img src="/img/bloosm.jpg" alt="Blossom" width="150" height="150">
+                    <h3>Blossom</h3>
+                    <p>Price: ₹200</p>
+                    <a id="anchor" href="/Login"><button>Contact Seller</button></a>
+                </div>
+                <div class="product">
+                    <img src="/img/fibre.jpg" alt="Fibre" width="150" height="150">
+                    <h3>Fibre</h3>
+                    <p>Price: ₹150</p>
+                    <a id="anchor" href="/Login"><button>Contact Seller</button></a>
+                </div>
             </div>
         </section>
     </main>

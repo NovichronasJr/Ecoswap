@@ -10,13 +10,12 @@ router.use(cookieParser());
 
 // Render homepage on GET /
 router.get('/', (req, res) => {
-    const products = [
-        { image:'/img/bananaleaf.jpeg', name: 'Banana Leaf', price: 100 },
-        { image: '/img/fibre.jpg', name: 'Banana Fibre', price: 150 },
-        { image: '/img/bloosm.jpg', name: 'Bloosm', price: 200 }
-    ];
-    res.render('homepage', { title: 'EcoSwap', products });
+    res.render('homepage');
 });
+
+router.get('/about',(req,res)=>{
+    res.render('about');
+})
 
 // Use the secondpath router for all routes under /signup
 const secondpath = require('./SecondSign'); // Ensure the path is correct
